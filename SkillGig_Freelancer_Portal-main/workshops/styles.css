@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7f00ff;
+  --card2-gradient-color2: #e100ff;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #141414; /* Light background to match the image */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+header {
+  background-color: transparent;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+#workshops {
+  display: flex;  /* Flexbox for side-by-side layout */
+  gap: 20px;  /* Spacing between cards */
+  padding: 20px;
+  justify-content: center;  /* Center cards horizontally */
+  flex-wrap: wrap;  /* Wrap cards to next row if space is limited */
+}
+
+.card-wrap {
+  width: 250px; /* Adjust card width to match the image */
+  background: #fff;
+  border-radius: 20px; /* Softer corners */
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-wrap:hover {
+  transform: translateY(-10px); /* Smooth hover effect */
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.card-header {
+  height: 150px; /* Adjust height to match the image */
+  width: 100%;
+  background: red; /* Placeholder color; can use gradients for card types */
+  border-radius: 0% 0% 50% 50%; /* Curved bottom border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header i {
+  color: #fff;
+  font-size: 64px; /* Smaller icon size */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333; /* Dark text color */
+}
+
+.card-text {
+  text-align: center;
+  font-size: 14px;
+  color: #666; /* Slightly darker text color */
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px; /* Rounded button corners */
+  padding: 10px 20px;
+  color: var(--color-text-btn);
+  background: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.card-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.card-header.one {
+  background: linear-gradient(to bottom right, var(--card1-gradient-color1), var(--card1-gradient-color2)); /* Adjusted gradients */
+}
+
+.card-header.two {
+  background: linear-gradient(to bottom right, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-header.three {
+  background: linear-gradient(to bottom right, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-header.four {
+  background: linear-gradient(to bottom right, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-btn.one {
+  background: linear-gradient(to right, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+
+.card-btn.two {
+  background: linear-gradient(to right, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+
+.card-btn.three {
+  background: linear-gradient(to right, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+
+.card-btn.four {
+  background: linear-gradient(to right, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

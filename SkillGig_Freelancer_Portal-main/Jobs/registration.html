@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apply-box">
+            <h1 style="text-align: center;">Job Application <span class="title-small"></span></h1>
+
+            <form action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first-name">First Name<span>*</span></label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-control">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Enter Last Name">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email<span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email">
+                    </div>
+                    <div class="form-control">
+                        <label for="phone">Phone Number<span>*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-control">
+                        <label for="linkedin">LinkedIn Profile<span>*</span></label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="Enter LinkedIn Profile URL">
+                    </div>
+                    <div class="form-control">
+                        <label for="github">Github Profile<span>*</span></label>
+                        <input type="url" id="github" name="github" placeholder="Enter Github Profile URL">
+                    </div>
+                    <div class="form-control">
+                        <label for="portfolio">Portfolio Link<span>*</span></label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="Enter Portfolio URL">
+                    </div>
+                    <div class="form-control">
+                        <label for="job-role">Job Role<span>*</span></label>
+                        <select name="job-role" id="job_role">
+                            <option value="">Select Job Role</option>
+                            <option value="ui-ux">UI & UX Designer</option>
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="cyber-security">Cyber Security</option>
+                            <option value="data-analysis">Data Analysis</option>
+                            <option value="full-stack">Full Stack Web Development</option>
+                            <option value="android-app-development">Android App Development</option>
+                            <option value="sql-development">Data Visualization</option>
+                            <option value="block-chain-development">Block Chain Development</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="experience">Years of Experience<span>*</span></label>
+                        <input type="number" id="experience" name="experience" placeholder="Enter Years of Experience">
+                    </div>
+                    <div class="form-control">
+                        <label for="skills">Skills<span>*</span></label>
+                        <input type="text" id="skills" name="skills" placeholder="Enter your skills, separated by commas">
+                    </div>
+                    <div class="form-control">
+                        <label for="rate">Hourly Rate (in USD)<span>*</span></label>
+                        <input type="number" id="rate" name="rate" placeholder="Enter Your Hourly Rate">
+                    </div>
+                    <div class="form-control">
+                        <label for="availability">Availability<span>*</span></label>
+                        <input type="text" id="availability" name="availability" placeholder="e.g., Immediately, Within 2 weeks">
+                    </div>
+                    <div class="textarea-control">
+                        <label for="address">Address<span>*</span></label>
+                        <textarea name="address" id="address" cols="50" rows="4" placeholder="Enter Address"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="city">City<span>*</span></label>
+                        <input type="text" id="city" name="city" placeholder="Enter City">
+                    </div>
+                    <div class="form-control">
+                        <label for="pincode">Pincode<span>*</span></label>
+                        <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode">
+                    </div>
+                    <div class="form-control">
+                        <label for="date">Date<span>*</span></label>
+                        <input value="2022-10-24" type="date" id="date" name="date" placeholder="Enter Date">
+                    </div>
+                    <div class="form-control">
+                        <label for="upload">Upload Your CV<span>*</span></label>
+                        <input type="file" id="upload" name="upload"/>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

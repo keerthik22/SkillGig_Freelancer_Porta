@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Workshop Registration</h1>
+    </header>
+
+    <section id="registration-form">
+        <form id="workshopForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <div class="form-control">
+                <label for="workshop">Select Workshop<span>*</span></label>
+                <select id="workshop" name="workshop" required>
+                    <option value="">Select Workshop</option>
+                    <option value="ui-ux">UI & UX Design Workshop - August 25, 2024</option>
+                    <option value="frontend">Frontend Development Workshop - September 5, 2024</option>
+                    <option value="backend">Backend Development Workshop - October 12, 2024</option>
+                    <option value="cyber-security">Cyber Security Workshop - November 18, 2024</option>
+                    <option value="data-analysis">Data Analysis Workshop - December 2, 2024</option>
+                    <option value="full-stack">Full Stack Web Development Workshop - January 15, 2025</option>
+                    <option value="android-app-development">Android App Development Workshop - February 20, 2025</option>
+                    <option value="sql-development">Data Visualization Workshop - March 10, 2025</option>
+                    <option value="block-chain-development">Blockchain Development Workshop - April 22, 2025</option>
+                </select>
+            </div>
+            
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <script src="wsrscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal || www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillGig | Freelancer Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+    <!-- Header Start -->
+    <header>
+        <nav class="nav container">
+        <h2 class="nav_logo">SkillGig</h2>
+
+        <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="index.html" class="nav_link">Home</a></li>
+            <li><a href="Talent/contest.html" class="nav_link">Talent</a></li>
+            <li><a href="workshops/workshop.html" class="nav_link">Workshop</a></li>
+            <li><a href="Jobs/jobs.html" class="nav_link">Job</a></li>
+            <li><a href="Projects/project.html" class="nav_link">Project</a></li>
+            <li><a href="contact/contact.html" class="nav_link">Contact</a></li>
+            <div class="buttons">
+                <button class="btn"><a href="signin_signup/login.html">Login/Sign Up</a></button>
+            </div>
+        </ul>
+        <img src="imagesbars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <section class="hero">
+        <div class="row container">
+        <div class="column">
+            <h2>Top free tool and extension to <br />radiply grow you business</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
+            <div class="buttons">
+            <button class="btn">Read More</button>
+            <a href="contact/contact.html"><button class="btn">Contact Us</button></a>
+            </div>
+        </div>
+        <div class="column">
+            <img src="images/hero.png" alt="heroImg" class="hero_img" />
+        </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+    </section>
+    <!-- Hero End-->
+    </main>
+
+    <script>
+    const header = document.querySelector("header");
+    const menuToggler = document.querySelectorAll("#menu_toggle");
+
+    menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+    });
+    </script>
+</body>
+</html>
